@@ -38,4 +38,14 @@ function My_First_Function() { //Defining a function and naming it
     //Putting the value of result into HTML elment with "Green_Text" id
 }
 
+function displayDate() { //Defining a function to tell the time
+    document.getElementById("time").innerHTML = Date();
+}
+
+function myFunction() { 
+    var sentence = "I am learning";
+    sentence += " a lot from this book!"; //Using the += operator to concatenate a string
+    document.getElementById("Concatenate").innerHTML = sentence;
+}
+
 
