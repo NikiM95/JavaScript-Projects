@@ -6,3 +6,4 @@ function addNum() { //Defining a function and naming it
     document.getElementById("demo").innerHTML = res;
 }
 
+
