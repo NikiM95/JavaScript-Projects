@@ -11,6 +11,6 @@ function my_Dictionary(){ //Defining a function and naming it
     // Utilizing document.getElementById("Dictionary").innerHTML to output all object values:
     //document.getElementById("Dictionary").innerHTML = Object.values(Animal);
 
-    // Use inner.HTML = Animal.Sound to output the value of my choosing:
+    // Use innerHTML = Animal.(key) to output the value of my choosing:
     document.getElementById("Dictionary").innerHTML = Animal.Age;   
 }
