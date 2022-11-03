@@ -1,5 +1,5 @@
 //      *SCOPE*
-// The scope is the functions, variables and objects you have access to.
+// The scope are the functions, variables and objects you have access to.
 // The scope of variables is either "local" or "global"
 
 // "global" variables can be accessed from any function within our code, see example:
@@ -14,17 +14,17 @@ function Add_numbers_2() {
 Add_numbers_1();
 Add_numbers_2();
 
-// "local" variables are only be accessed by the funcion it is assigned to, see example:
+// "local" variables can only be accessed by the funcion it is assigned to, see example:
 function Add_numbers_3() {
-    var Y = 10; // variable "Y" was asigned within the function so could be 
-    // be accessed outside of it
+    var Y = 10; // because variable "Y" was assigned within the function it can only 
+    // be accessed inside of that function
     document.write(20 + Y + "<br>");
 }
-//function Add_numbers_4() {
-//    document.write(Y + 100);
-//}
+function Add_numbers_4() {
+    document.write(Y + 100);
+}
 Add_numbers_3(); // displays only this result
-//Add_numbers_4();
+Add_numbers_4();
 
 var H = 10000; 
 function error_Result() {
@@ -34,7 +34,7 @@ function Add_numbers_6() {
     document.write(H + 100 + "<br>");
 }
 Add_numbers_6();
-error_result();
+error_result(); // this will show an error in the console because the variable is missing an uppercase letter
 
 
 //      *if Statement*
@@ -42,7 +42,7 @@ error_result();
 // that a section of code is to be executed if a condition is true
 
 function get_Date() {
-    if (new Date().getHours() < 23) {
+    if (new Date().getHours() < 18) { // this will check if the current time is less than 18:00, if so it will display the following message
         document.getElementById("Greeting").innerHTML = "How are you today?";
     }
 }
@@ -61,11 +61,11 @@ function get_Age() {
 
 function prize_Function() {
     color = document.getElementById("color").value;
-    if (color == "Pink") {
+    if (color == "Pink") { // if user picks "Pink" the message "Congratulations! You won" will appear
         Prize = "Congratulations! You won";
     }
     else {
-        Prize = "I am sorry you lose";
+        Prize = "I am sorry you lose"; // if user enters in nothing or a different coor, this message will appear
     }
     document.getElementById("userPicks").innerHTML = Prize;
 }
@@ -75,7 +75,7 @@ function prize_Function() {
 // if the "if" statement is found to e false
 
 function Time_Function() {
-    var Time = new Date().getHours();
+    var Time = new Date().getHours(); // checking current time
     var Replay;
     if (Time < 12 == Time > 0) {
         Replay = "It is morning time!";
