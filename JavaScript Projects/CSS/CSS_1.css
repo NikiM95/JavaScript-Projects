@@ -1,0 +1,36 @@
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 100%;
+  background-color: #af4ca5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #a0457a;
+}
+
+div{
+  width: 40%;
+  border-radius: 10px;
+  background-color: #b6adad82;
+  padding: 20px;
+  height: 210px;
+} /* look at mod 4 A 13-challenge 18 */
+
+
